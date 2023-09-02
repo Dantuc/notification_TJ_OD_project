@@ -6,9 +6,9 @@ from selenium.webdriver.chrome.service import Service
 service = Service(ChromeDriverManager().install())
 nav = webdriver.Chrome(service=service)
 
-i = 1
+i = 301
 
-while i <= 300:
+while i <= 800:
 
     nav.get("https://dje.tjmg.jus.br/ultimaEdicao.do")
     captcha = nav.find_element("xpath", '//*[@id="captcha_image"]')
